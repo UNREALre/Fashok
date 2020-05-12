@@ -4,6 +4,5 @@ logLevel: WARN
 tg:
   key: 'TG_API_KEY'
 
-app:
-  params:
-    quotesurl: 'https://randstuff.ru/saying/'
+resources:
+  quotes: 'https://randstuff.ru/saying/'
