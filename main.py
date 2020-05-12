@@ -42,11 +42,21 @@ stickers_ziga = [
 
 def generate_answer(event, user, message):
     out = []
-    if event == "start":
-        out = "Привет! Меня зовут Фашок! Я альтер эго Сашка! Давай общаться!"
-        return out
-
     user_id = user.id
+
+    if event == "start":
+        out.append("Привет! Меня зовут Фашок! Я альтер эго Сашка! Давай общаться!")
+
+        if user_id == 99760649:
+            out.append("Создатель!")
+        elif user_id == 493041312:  # Димас
+            out.append("Димулька, гулять не забывай!")
+        elif user_id == 430452197:  # Алексей
+            out.append("Лешка, че там, Валоран не хочешь с корешами катать пару раз в неделю? Полицай ты?")
+        else:
+            out.append("Кажется, я Вас не знаю. Не люблю разговаривать с незнакомцами.")
+
+        return out
 
     if user_id == 99760649:
         out.append("Сашок!")
