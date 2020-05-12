@@ -1,0 +1,5 @@
+appName: Fashok
+logLevel: WARN
+
+tg:
+  key: 'TG_API_KEY'
